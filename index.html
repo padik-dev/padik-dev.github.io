@@ -1,0 +1,59 @@
+<html>
+	<head>
+		<title>Гоп-стоп кликер</title>
+		<style type="text/css">
+			@font-face {
+				font-family: Riffic;
+				src: url(riffic.ttf);
+			}
+			
+			body
+			{
+				font-family: "Riffic";
+			}
+			
+			h1
+			{
+				margin: 0;
+				font-size: 52px;
+				text-align: center;
+			}
+			
+			h2
+			{
+				color: #1abc9c;
+				font-size: 36px;
+				text-align: center;
+			}
+			
+			#clickObj
+			{
+				text-align: center;
+				width: 100%;
+			}
+			
+			#clickObj>img
+			{
+				cursor:pointer;
+			}
+		</style>
+	</head>
+	<body>
+	<h1>Здесь когда-нибудь будет сайт,</h1>
+	<h1>а пока что вот:</h1>
+	<h2 id="score">Деньги: 0</h2>
+	<div id="clickObj">
+		<img src="clickimg.png" onClick="onClick()" alt="click"/>
+	</div>
+	<script>
+		var x = 0;
+		var scoreCount = document.getElementById("score");
+		
+		function onClick()
+		{
+			x++;
+			scoreCount.innerHTML = "Деньги: " + x;
+		}
+	</script>
+	</body>
+</html>
